@@ -1,0 +1,23 @@
+{
+  "brand_name": "Petal & Leaf",
+  "brand_personality": [
+    "Warm and inviting",
+    "Expert and approachable",
+    "Innovative and eco-friendly"
+  ],
+  "color_palette": {
+    "primary": "Earthy tones such as sage green, moss, and terracotta",
+    "secondary": "White and natural wood",
+    "accent": ""
+  },
+  "typography": {
+    "heading": "Friendly, approachable fonts such as Lato and Merriweather",
+    "body": ""
+  },
+  "logo_concept": "A stylized leaf with a subtle, hand-painted feel, accompanied by a clean and modern sans-serif font",
+  "brand_voice": "Nourish Your Space, Nurture Your Soul",
+  "sample_usage": {
+    "website_headline": "Welcome to Petal & Leaf, where you can nurture your love of plants and find tranquility in the heart of the city.",
+    "instagram_bio": "From rare and exotic plants to expert advice and beautiful plant arrangements, we're here to help you bring balance and serenity into your life."
+  }
+}
