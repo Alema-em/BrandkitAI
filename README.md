@@ -15,9 +15,10 @@ All outputs are structured as JSON and downloadable.
 
 ---
 ## Screenshots
-<img width="749" height="348" alt="Screenshot 2026-02-08 215429" src="https://github.com/user-attachments/assets/8ed1a738-0ce3-458f-8ca8-c575871821a0" />
-<img width="1433" height="747" alt="Screenshot 2026-02-08 231931" src="https://github.com/user-attachments/assets/11707556-73cd-485f-a47b-379b41b11227" />
+<img width="1690" height="834" alt="image" src="https://github.com/user-attachments/assets/f35c4162-fab4-4621-8a23-c12f9e536a48" />
 <img width="1444" height="831" alt="Screenshot 2026-02-08 231920" src="https://github.com/user-attachments/assets/dd30ac05-e21d-4d2a-8181-d01c6f771218" />
+<img width="1433" height="747" alt="Screenshot 2026-02-08 231931" src="https://github.com/user-attachments/assets/11707556-73cd-485f-a47b-379b41b11227" />
+
 
 
 ## Tech Stack
