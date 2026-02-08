@@ -9,9 +9,7 @@ from pathlib import Path
 USE_OLLAMA = True
 load_dotenv(dotenv_path=Path(".env"))
 
-# --------------------------------------------------
-# 1) JSON EXTRACTOR (simple + reliable)
-# --------------------------------------------------
+
 
 def extract_json(text: str):
     matches = re.findall(r"\{.*\}", text, re.DOTALL)
@@ -26,9 +24,7 @@ def extract_json(text: str):
         raise ValueError(f"Invalid JSON from model:\n{json_text}") from e
 
 
-# --------------------------------------------------
-# 2) MAIN GENERATOR (llama3.1, one-step JSON)
-# --------------------------------------------------
+
 
 def generate_brand_ollama(business_idea: str):
 
@@ -114,9 +110,7 @@ def generate_brand(business_idea: str):
     return generate_brand_ollama(business_idea)
 
 
-# --------------------------------------------------
-# 3) CLEAN MAIN BLOCK (NO DOUBLE PARSING)
-# --------------------------------------------------
+
 
 if __name__ == "__main__":
     idea = input("Describe your business idea:\n")
