@@ -1,6 +1,6 @@
-# BrandForge AI
+# BrandKit AI
 
-BrandForge AI turns a short business idea into a structured brand identity — colors, typography, logo concept, website mockup, moodboard, and social copy — powered by a local LLM through Ollama.
+BrandKit AI turns a short business idea into a structured brand identity — colors, typography, logo concept, website mockup, moodboard and social copy — powered by a local LLM through Ollama.
 
 The primary experience is a single-page web app (`frontend/web/`) served by Flask. An optional Streamlit dashboard is included for development and demos.
 
@@ -8,11 +8,11 @@ The primary experience is a single-page web app (`frontend/web/`) served by Flas
 
 ## Screenshots
 
-A quick look at the BrandForge UI — from a single idea to a client-ready brand deck.
+A quick look at the BrandKit UI — from a single idea to a client-ready brand deck.
 
 ### Website preview
 
-Interactive browser-style homepage mockup with industry-aware hero imagery, typography, and CTA.
+Interactive browser-style homepage mockup with industry-aware hero imagery, typography and CTA.
 
 <img width="1690" alt="BrandForge website preview" src="https://github.com/user-attachments/assets/f35c4162-fab4-4621-8a23-c12f9e536a48" />
 
