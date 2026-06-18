@@ -8,11 +8,37 @@ The primary experience is a single-page web app (`frontend/web/`) served by Flas
 
 ## Screenshots
 
-<img width="1690" height="834" alt="BrandForge website preview" src="https://github.com/user-attachments/assets/f35c4162-fab4-4621-8a23-c12f9e536a48" />
-<img width="1444" height="831" alt="BrandForge brand system" src="https://github.com/user-attachments/assets/dd30ac05-e21d-4d2a-8181-d01c6f771218" />
-<img width="1433" height="747" alt="BrandForge moodboard and social assets" src="https://github.com/user-attachments/assets/11707556-73cd-485f-a47b-379b41b11227" />
+A quick look at the BrandForge UI — from a single idea to a client-ready brand deck.
 
-Local captures are also available in [`screenshots/`](screenshots/), including [`website-preview.png`](screenshots/website-preview.png).
+### Website preview
+
+Interactive browser-style homepage mockup with industry-aware hero imagery, typography, and CTA.
+
+<img width="1690" alt="BrandForge website preview" src="https://github.com/user-attachments/assets/f35c4162-fab4-4621-8a23-c12f9e536a48" />
+
+![Website preview](screenshots/website-preview.png)
+
+### Brand system
+
+Unified design system strip: palette, typography, logo mark, and brand voice.
+
+<img width="1444" alt="BrandForge design system" src="https://github.com/user-attachments/assets/dd30ac05-e21d-4d2a-8181-d01c6f771218" />
+
+![Brand system](screenshots/brand-system.svg)
+
+### Moodboard
+
+Editorial six-image moodboard matched to the brand’s industry category.
+
+![Moodboard](screenshots/moodboard.svg)
+
+### Social assets
+
+Instagram and LinkedIn launch previews generated alongside the brand kit.
+
+<img width="1433" alt="BrandForge moodboard and social previews" src="https://github.com/user-attachments/assets/11707556-73cd-485f-a47b-379b41b11227" />
+
+![Social assets](screenshots/social-assets.svg)
 
 ---
 
@@ -64,7 +90,7 @@ Brand/
 │   │   └── api.js
 │   └── streamlit/
 │       └── ui.py            # Alternate dashboard UI
-├── docs/                    # Audit notes, bugfix log, roadmap
+├── docs/                    # Audit notes and bugfix log
 ├── screenshots/             # README visuals
 ├── assets/                  # Reserved for static brand assets
 ├── generated/               # Logo output (gitignored)
@@ -129,20 +155,6 @@ curl -X POST http://127.0.0.1:5000/generate-brand \
 
 ---
 
-## Roadmap
-
-See [docs/ROADMAP.md](docs/ROADMAP.md) for the 30-day product plan (payments, hosting, accounts, and paid export).
-
-High-level next steps:
-
-1. Public deployment (Render, Railway, or similar)
-2. Stripe checkout for full brand kit unlock
-3. User accounts and saved brands
-4. Higher-quality logo export in the UI
-5. Automated tests for API and JSON schema
-
----
-
 ## Known limitations
 
 - **Requires Ollama locally** — generation fails if Ollama is not running or the model is missing
@@ -160,7 +172,6 @@ High-level next steps:
 |----------|-------------|
 | [docs/PROJECT_AUDIT.md](docs/PROJECT_AUDIT.md) | Structure audit and dependency notes |
 | [docs/BUGFIX_REPORT.md](docs/BUGFIX_REPORT.md) | Stability and schema fixes log |
-| [docs/ROADMAP.md](docs/ROADMAP.md) | Business and product roadmap |
 
 ---
 

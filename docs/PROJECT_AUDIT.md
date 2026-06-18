@@ -38,7 +38,7 @@ Brand/
 ├── frontend/
 │   ├── web/              # HTML/CSS/JS + api.js
 │   └── streamlit/ui.py
-├── docs/                 # Audit, bugfix log, roadmap
+├── docs/                 # Audit and bugfix log
 ├── screenshots/          # README visuals
 ├── assets/               # Static assets (reserved)
 ├── server.py, ui.py, ai_engine.py   # Compatibility shims

@@ -26,3 +26,6 @@ BrandforgeUI/
 # IDE
 .vscode/
 .idea/
+
+# Local-only planning (not for public repo)
+docs/ROADMAP.md
