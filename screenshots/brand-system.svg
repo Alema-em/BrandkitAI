@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Brand system placeholder">
+  <rect width="1200" height="675" fill="#0c0c10"/>
+  <g transform="translate(80,120)">
+    <rect width="240" height="360" rx="14" fill="#15151c" stroke="rgba(255,255,255,0.08)"/>
+    <rect x="24" y="48" width="192" height="56" rx="10" fill="#ffc107"/>
+    <rect x="24" y="120" width="192" height="56" rx="10" fill="#8bc34a"/>
+    <rect x="24" y="192" width="192" height="56" rx="10" fill="#2196f3"/>
+    <text x="120" y="300" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-family="system-ui,sans-serif" font-size="16">Color</text>
+  </g>
+  <g transform="translate(360,120)">
+    <rect width="240" height="360" rx="14" fill="#15151c" stroke="rgba(255,255,255,0.08)"/>
+    <text x="120" y="120" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="28">Montserrat</text>
+    <text x="120" y="200" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="system-ui,sans-serif" font-size="22">Lato</text>
+    <text x="120" y="300" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-family="system-ui,sans-serif" font-size="16">Typography</text>
+  </g>
+  <g transform="translate(640,120)">
+    <rect width="240" height="360" rx="14" fill="#15151c" stroke="rgba(255,255,255,0.08)"/>
+    <circle cx="120" cy="170" r="56" fill="none" stroke="#8b5cf6" stroke-width="4"/>
+    <text x="120" y="300" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-family="system-ui,sans-serif" font-size="16">Mark</text>
+  </g>
+  <g transform="translate(920,120)">
+    <rect width="200" height="360" rx="14" fill="#15151c" stroke="rgba(255,255,255,0.08)"/>
+    <rect x="30" y="80" width="140" height="28" rx="14" fill="none" stroke="rgba(255,255,255,0.25)"/>
+    <rect x="30" y="130" width="120" height="28" rx="14" fill="none" stroke="rgba(255,255,255,0.25)"/>
+    <text x="100" y="300" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-family="system-ui,sans-serif" font-size="16">Voice</text>
+  </g>
+  <text x="600" y="600" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-family="system-ui,sans-serif" font-size="22">Brand System</text>
+</svg>

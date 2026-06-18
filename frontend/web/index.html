@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BrandForge</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display&family=Montserrat&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="reveal-v2.css" />
+  <link rel="stylesheet" href="reveal-v3.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">BrandForge</div>
+    <button class="nav-btn">Get Started</button>
+  </nav>
+
+  <section class="hero">
+
+    <div class="hero-content">
+      <h1>
+        Build Your Brand <br />
+        <span>In Minutes</span>
+      </h1>
+      <p>
+        Design, build and launch your brand - all in one place.
+      </p>
+      <div class="buttons">
+        <button class="primary">Start Building</button>
+        <button class="secondary">View Demo</button>
+      </div>
+    </div>
+
+    <div class="glow"></div>
+  </section>
+
+
+  <section class="features">
+  <div class="features-container">
+
+    <h2 class="features-title">
+      Everything you need to build your brand
+    </h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="line"></div>
+        <h3>Instant Brand Kit</h3>
+        <p>Generate logos, colors, and typography instantly.</p>
+      </div>
+
+      <div class="card">
+        <div class="line"></div>
+        <h3>Smart Design System</h3>
+        <p>Maintain consistency across all your assets effortlessly.</p>
+      </div>
+
+      <div class="card">
+        <div class="line"></div>
+        <h3>Launch Ready Assets</h3>
+        <p>Websites, social kits, and everything to go live fast.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="preview">
+  <div class="preview-container">
+
+    <h2 class="preview-title">
+      See your brand <span>come to life</span>
+    </h2>
+
+    <p class="preview-sub">
+      Enter your idea and watch us build your identity instantly
+    </p>
+
+    <div class="input-box">
+      <input type="text" placeholder="Enter your brand idea..." id="brandInput">
+      <button onclick="generateBrand()">Generate</button>
+    </div>
+    <p id="generateError" class="generate-error hidden"></p>
+
+    <div id="outputBox" class="output hidden">
+
+      <div id="loadingState" class="loading-state hidden">
+        <p class="loading-text">Generating your brand...</p>
+      </div>
+
+      <div id="generatedContent" class="hidden brand-experience brand-deck">
+      <div id="archetypeRoot" class="archetype-root">
+      <div class="deck-canvas">
+
+        <header id="brandMetaCompact" class="deck-meta hidden">
+          <div class="meta-cell">
+            <span class="meta-label">Brand</span>
+            <span id="metaBrandName" class="meta-value meta-brand-name"></span>
+          </div>
+          <div class="meta-cell">
+            <span class="meta-label">Industry</span>
+            <span id="metaCategory" class="meta-value"></span>
+          </div>
+          <div class="meta-cell meta-cell-style">
+            <span class="meta-label">Style</span>
+            <div id="metaStyleKeywords" class="meta-keyword-row"></div>
+          </div>
+        </header>
+
+        <section id="revealExperience" class="deck-stage hidden">
+          <div class="deck-pin-wrap">
+            <div id="liveHeroSitePreview" class="hero-site-preview deck-website" aria-hidden="true">
+              <div id="siteMockup" class="site-mockup">
+                  <div class="site-mockup-chrome">
+                    <div class="chrome-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+                    <span id="mockupUrl" class="chrome-url">brand.com</span>
+                  </div>
+                  <div class="site-mockup-body">
+                    <header class="mockup-site-header">
+                      <div class="mockup-brand-lockup">
+                        <span id="mockupLogoMark" class="mockup-logo-mark" aria-hidden="true"></span>
+                        <span id="mockupBrandName" class="mockup-brand-name"></span>
+                      </div>
+                      <nav id="mockupTabs" class="mockup-tabs" aria-label="Website sections">
+                        <button type="button" class="mockup-tab is-active" data-tab="home">Home</button>
+                        <button type="button" class="mockup-tab" data-tab="features">Features</button>
+                        <button type="button" class="mockup-tab" data-tab="about">About</button>
+                        <button type="button" class="mockup-tab" data-tab="contact">Contact</button>
+                      </nav>
+                      <span class="mockup-nav-cta">Sign up</span>
+                    </header>
+                    <div id="mockupPages" class="mockup-pages">
+                      <div class="mockup-page is-active" data-page="home">
+                        <div class="mockup-hero-strip">
+                          <div class="mockup-hero-text">
+                            <p id="mockupHeadline" class="mockup-headline"></p>
+                            <p id="mockupSubheadline" class="mockup-sub"></p>
+                            <span id="mockupCtaPill" class="mockup-cta-pill"></span>
+                          </div>
+                          <figure class="mockup-hero-image">
+                            <img id="mockupHeroImg" alt="" loading="lazy" />
+                          </figure>
+                        </div>
+                      </div>
+                      <div class="mockup-page" data-page="features">
+                        <div id="mockupFeaturesGrid" class="mockup-features-grid"></div>
+                      </div>
+                      <div class="mockup-page" data-page="about">
+                        <div class="mockup-about-block">
+                          <p id="mockupAboutTitle" class="mockup-section-title"></p>
+                          <p id="mockupAboutBody" class="mockup-about-text"></p>
+                          <blockquote id="mockupAboutQuote" class="mockup-about-quote"></blockquote>
+                        </div>
+                      </div>
+                      <div class="mockup-page" data-page="contact">
+                        <div class="mockup-contact-block">
+                          <p id="mockupContactTitle" class="mockup-section-title"></p>
+                          <p id="mockupContactBody" class="mockup-contact-text"></p>
+                          <span id="mockupContactCta" class="mockup-cta-pill"></span>
+                          <p id="mockupContactDomain" class="mockup-contact-domain"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="deck-system-section">
+            <h3 class="deck-system-heading">Design System</h3>
+            <div class="deck-system">
+            <article id="emergePalette" class="system-card system-palette extract-block extract-palette" data-step="1">
+              <span class="system-label">Palette</span>
+              <div class="color-strip emerge-colors">
+                <div class="color-swatch"><div class="color color-primary"></div><span class="hex hex-primary"></span></div>
+                <div class="color-swatch"><div class="color color-secondary"></div><span class="hex hex-secondary"></span></div>
+                <div class="color-swatch"><div class="color color-accent"></div><span class="hex hex-accent"></span></div>
+              </div>
+            </article>
+            <article id="emergeType" class="system-card system-type extract-block extract-type" data-step="2">
+              <span class="system-label">Typography</span>
+              <div id="fontPreview" class="type-showcase">
+                <div class="type-sample type-sample-heading">
+                  <p id="headingFontDisplay" class="type-sample-text"></p>
+                  <p class="type-sample-meta type-meta-heading">Heading</p>
+                </div>
+                <div class="type-sample type-sample-body">
+                  <p id="bodyFontDisplay" class="type-sample-text"></p>
+                  <p class="type-sample-meta type-meta-body">Body</p>
+                </div>
+              </div>
+            </article>
+            <article id="emergeLogo" class="system-card system-logo extract-block extract-logo" data-step="3">
+              <span class="system-label">Logo</span>
+              <div class="emerge-logo-row">
+                <div id="logoSvgContainer" class="logo-svg-container" aria-hidden="true"></div>
+              </div>
+            </article>
+            <article id="emergeVoice" class="system-card system-voice extract-block extract-voice" data-step="4">
+              <span class="system-label">Voice</span>
+              <ul id="personality" class="personality-chips"></ul>
+              <blockquote id="voice" class="voice-quote"></blockquote>
+            </article>
+          </div>
+          </div>
+        </section>
+
+        <section id="brandMoodboardSection" class="deck-moodboard reveal-stage hidden" data-section="moodboard">
+          <span class="deck-section-label">Visual world</span>
+          <div id="editorialMoodboard" class="editorial-masonry" aria-label="Brand moodboard"></div>
+        </section>
+
+        <section id="creativeDirection" class="deck-direction reveal-stage hidden" data-section="creative">
+          <p id="creativeDirectionText" class="deck-direction-text"></p>
+        </section>
+
+        <section id="launchZone" class="deck-launch reveal-stage hidden" data-section="launch">
+        <span class="deck-section-label">Launch preview</span>
+        <div id="launchContentCard" class="launch-content-card hidden">
+          <div class="social-posts-grid">
+
+            <article id="instagramPreview" class="ig-post-mock">
+              <header class="ig-post-header">
+                <span class="ig-avatar"></span>
+                <span id="igBrandHandle" class="ig-handle"></span>
+              </header>
+              <div class="ig-post-image">
+                <p id="instagramVisual" class="ig-visual-text"></p>
+              </div>
+              <div class="ig-post-body">
+                <p id="instagramCaption" class="ig-caption"></p>
+              </div>
+            </article>
+
+            <article id="linkedinPreview" class="li-post-mock">
+              <header class="li-post-header">
+                <span class="li-avatar"></span>
+                <div class="li-meta">
+                  <span id="liBrandName" class="li-brand-name"></span>
+                  <span class="li-timestamp">Just now</span>
+                </div>
+              </header>
+              <p id="linkedinHeadline" class="li-headline"></p>
+              <p id="linkedinPost" class="li-body"></p>
+            </article>
+
+          </div>
+        </div>
+
+      </section>
+
+        <section id="actionsZone" class="deck-actions reveal-stage hidden" data-section="actions">
+          <p class="deck-watermark">Free preview · Unlock the full brand kit to export everything</p>
+          <button id="downloadPdfBtn" class="pdf-btn deck-cta hidden" onclick="downloadPdf()">Download brand preview</button>
+          <p id="pdfError" class="pdf-error hidden"></p>
+        </section>
+
+      </div>
+
+      <div id="legacyBrandHeader" class="legacy-brand-header hidden">
+        <h2 id="brandName"></h2>
+        <p id="tagline"></p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<script src="api.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

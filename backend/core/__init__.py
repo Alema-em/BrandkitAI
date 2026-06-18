@@ -1,15 +1,9 @@
-"""Backward-compatible shim for the AI engine module.
-
-Prefer importing from backend.core.ai_engine directly.
-"""
-
 from backend.core.ai_engine import (
     OllamaError,
     OllamaTimeoutError,
     OllamaUnavailableError,
     extract_json,
     generate_brand,
-    generate_brand_ollama,
     generate_vector_logo,
 )
 
@@ -19,6 +13,5 @@ __all__ = [
     "OllamaUnavailableError",
     "extract_json",
     "generate_brand",
-    "generate_brand_ollama",
     "generate_vector_logo",
 ]

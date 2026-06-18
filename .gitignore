@@ -1,8 +1,28 @@
+# Python
 .venv/
 __pycache__/
+*.py[cod]
+*.pyo
+.Python
+
+# Environment and secrets
 .env
-*.pyc
+.env.*
+
+# Logs and OS
 *.log
 .DS_Store
-brand_preview_*.json
+desktop.ini
+Thumbs.db
 
+# Generated artifacts
+brand_preview_*.json
+generated/
+
+# Legacy / local-only folders
+BrandforgeUI/
+*.zip
+
+# IDE
+.vscode/
+.idea/

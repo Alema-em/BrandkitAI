@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Moodboard placeholder">
+  <rect width="1200" height="675" fill="#0c0c10"/>
+  <rect x="80" y="80" width="520" height="420" rx="8" fill="#242430"/>
+  <rect x="620" y="80" width="240" height="200" rx="8" fill="#2a2a38"/>
+  <rect x="880" y="80" width="240" height="200" rx="8" fill="#1e1e28"/>
+  <rect x="620" y="300" width="240" height="200" rx="8" fill="#303040"/>
+  <rect x="880" y="300" width="240" height="200" rx="8" fill="#222230"/>
+  <rect x="80" y="520" width="1040" height="80" rx="8" fill="#2c2c3a"/>
+  <text x="600" y="640" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-family="system-ui,sans-serif" font-size="22">Moodboard</text>
+</svg>
