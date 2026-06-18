@@ -13,39 +13,36 @@ A quick look at the BrandKit UI — from a single idea to a client-ready brand d
 ### Website preview
 
 Interactive browser-style homepage mockup with industry-aware hero imagery, typography and CTA.
+<img width="1618" height="887" alt="image" src="https://github.com/user-attachments/assets/e7a5b33c-3c9f-4ecd-9b81-d7e209f86ba2" />
 
-<img width="1690" alt="BrandForge website preview" src="https://github.com/user-attachments/assets/f35c4162-fab4-4621-8a23-c12f9e536a48" />
 
-![Website preview](screenshots/website-preview.png)
 
 ### Brand system
 
 Unified design system strip: palette, typography, logo mark, and brand voice.
 
-<img width="1444" alt="BrandForge design system" src="https://github.com/user-attachments/assets/dd30ac05-e21d-4d2a-8181-d01c6f771218" />
+<img width="987" height="205" alt="image" src="https://github.com/user-attachments/assets/7008014c-9420-4423-afcd-0e4385230a75" />
 
-![Brand system](screenshots/brand-system.svg)
 
 ### Moodboard
 
 Editorial six-image moodboard matched to the brand’s industry category.
 
-![Moodboard](screenshots/moodboard.svg)
+<img width="1413" height="442" alt="image" src="https://github.com/user-attachments/assets/f97f0759-e753-42db-acba-3b7425563105" />
+
 
 ### Social assets
 
 Instagram and LinkedIn launch previews generated alongside the brand kit.
+<img width="1600" height="863" alt="image" src="https://github.com/user-attachments/assets/883a34ea-9821-4ae0-ba4f-466616088519" />
 
-<img width="1433" alt="BrandForge moodboard and social previews" src="https://github.com/user-attachments/assets/11707556-73cd-485f-a47b-379b41b11227" />
-
-![Social assets](screenshots/social-assets.svg)
 
 ---
 
 ## Features
 
-- **Brand identity generation** — name, personality, and positioning from a one-line idea
-- **Color palette creation** — primary, secondary, and accent colors
+- **Brand identity generation** — name, personality and positioning from a one-line idea
+- **Color palette creation** — primary, secondary and accent colors
 - **Typography recommendations** — heading and body font pairings
 - **Logo concept generation** — SVG mark concepts by industry archetype
 - **Website mockup generation** — interactive browser-style homepage preview
